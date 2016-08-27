@@ -23,8 +23,12 @@
         </optgroup>
     </select>
     <input type="button" value="Applicant Information" id="button" />
-   
-   <center>
+    
+    
+    </form>
+
+
+<center>
     <p id="Bill">This is the applicant information for Bill</p>
     <p id="Hannah">This is the applicant information for Hannah</p>
     <p id="Steve">This is the applicant information for Steve</p>
@@ -32,63 +36,27 @@
     <p id="Gill">This is the applicant information for Gill</p>
     <p id="James">This is the applicant information for James</p>
 </center>
-    
-</form>
 
-<script>
+
+
+<script type="text/javascript">
+
+
+document.getelementbyid("Bill").style.display = "none";
+
 
 var button = document.getElementById('button');
 
 button.onclick = function() {
 	
-    var div = document.getElementById('applicantinformation1');
-    if (div.style.display !== 'none') {
-        div.style.display = 'none';
+    var id = document.getElementById('Bill');
+    if (id.style.display !== 'none') {
+        id.style.display = 'none';
     }
     else {
-        div.style.display = 'block';
+        id.style.display = 'block';
     }
-    
-     var div = document.getElementById('applicantinformation2');
-    if (div.style.display !== 'none') {
-        div.style.display = 'none';
-    }
-    else {
-        div.style.display = 'block';
-    }
-    
-     var div = document.getElementById('applicantinformation3');
-    if (div.style.display !== 'none') {
-        div.style.display = 'none';
-    }
-    else {
-        div.style.display = 'block';
-    }
-    
-     var div = document.getElementById('applicantinformation4');
-    if (div.style.display !== 'none') {
-        div.style.display = 'none';
-    }
-    else {
-        div.style.display = 'block';
-    }
-    
-     var div = document.getElementById('applicantinformation5');
-    if (div.style.display !== 'none') {
-        div.style.display = 'none';
-    }
-    else {
-        div.style.display = 'block';
-    }
-    
-     var div = document.getElementById('applicantinformation5');
-    if (div.style.display !== 'none') {
-        div.style.display = 'none';
-    }
-    else {
-        div.style.display = 'block';
-    }
-    
+     
 };
 	
 	
