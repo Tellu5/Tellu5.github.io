@@ -8,12 +8,30 @@
 	<body>
 	
 	<center>
-	  <form style="margin-top:100px">
+	  <form style="margin-top:100px" action="action_page.php">
 	    <input style="height:30px; width:400px; padding-left:10px;" placeholder="Please select an applicant..." type="text" name="text" id="text" />
+	    	<select name="Applicant">
+    			<option value="John">Volvo</option>
+			<option value="Mary">Saab</option>
+    			<option value="Bill">Fiat</option>
+    			<option value="Susan">Audi</option>
+  		</select>
 	    <input style="height:35px;" type="button" value="Search Applicant" id="button" />
-	    <center><p id="applicant information">This is the information about the applicant</p></center>
+	    <center><p id="applicant">This is the information about the applicant</p></center>
 	  </form>
 	</center>
+	
+	
+	<script type="text/javascript"> 
+	
+		document.getelementbyid("applicant").style.display = "none";
+	
+	
+	
+	</script>
+
+	
+	
 	
 	
 
