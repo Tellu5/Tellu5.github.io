@@ -8,42 +8,28 @@
 	<body>
 	
 	<center>
- 	  <form style="margin-top:100px;">
- 	    <input style="height:30px; width:400px; padding-left="10px" placeholder="Please select an applicant..." type="text" name="text" id="text" <ul>
- 	    	<li>Bill</li>
--	    	<li>Bill</li>	
-		<li>Bill</li>
-	</ul>
-/>
-
-<input style="height:35px;" type="button" value="search applicant" id="button" />
+ 	 <input type="radio" name="Bill" value="1" id="button1"/>
+	 <input type="radio" name="Steve" value="2" id="button2"/>
+	 <input type="radio" name="Hannah" value="2" id="button3"/>
+	 <input type="radio" name="Mary" value="2" id="button4"/>
+	 <input type="radio" name="Lucas" value="2" id="button5"/>
 
 
- 	    <center><p id="Bill">This is the applicant information for Bill</p></center>
-    <center><p id="Hannah">This is the applicant information for Hannah</p></center>
-    <center><p id="Steve">This is the applicant information for Steve</p></center>
-   <center> <p id="Grace">This is the applicant information for Grace</p></center>
-   <center> <p id="Gill">This is the applicant information for Gill</p></center>
-   <center> <p id="James">This is the applicant information for James</p></center>
-   
- 	  </form>
- 	  
- 	</center>
- 	
- 
 
 
 
 <script type="text/javascript">
 
 
-document.getelementbyid("Bill").style.display = "none";
+var button1 = document.getElementById("button1");
+var button2 = document.getElementById("button2");
 
-function() {
-
-var 	
-	
-}	
+if (button1.checked){
+    alert("radio1 selected");
+}else if (button2.checked) {
+    alert("radio2 selected");
+}
+ 	
 	
 </script>
 
