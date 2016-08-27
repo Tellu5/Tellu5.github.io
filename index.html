@@ -8,7 +8,7 @@
 	<body>
 	
 	<center>
-		<h1 style="margin-top: 200px; padding-bottom:40px;">Applicant Search</h1>
+		<h1 style="margin-top: 200px; padding-bottom:20px;">Applicant Search</h1>
 	<form id="tableForm" action="/getJson" method="get">
     <select class="selectpicker" data-style="btn-info" name="selectpicker">
         <optgroup label="Select Applicant"
@@ -30,7 +30,7 @@
     <center><p id="applicantinformation4">This is the applicant information for Grace</p></center>
     <center><p id="applicantinformation5">This is the applicant information for Gill</p></center>
     <center><p id="applicantinformation6">This is the applicant information for James</p></center>
-    
+
     
 </form>
 
@@ -39,6 +39,7 @@
 var button = document.getElementById('button');
 
 button.onclick = function() {
+	
     var div = document.getElementById('applicantinformation1');
     if (div.style.display !== 'none') {
         div.style.display = 'none';
@@ -46,6 +47,47 @@ button.onclick = function() {
     else {
         div.style.display = 'block';
     }
+    
+     var div = document.getElementById('applicantinformation2');
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+    
+     var div = document.getElementById('applicantinformation3');
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+    
+     var div = document.getElementById('applicantinformation4');
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+    
+     var div = document.getElementById('applicantinformation5');
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+    
+     var div = document.getElementById('applicantinformation5');
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+    
 };
 	
 	
