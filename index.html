@@ -8,35 +8,43 @@
 	<body>
 	
 	<center>
- 	 <input type="radio" name="Bill" value="1" id="button1"/>
-	 <input type="radio" name="Steve" value="2" id="button2"/>
-	 <input type="radio" name="Hannah" value="3" id="button3"/>
-	 <input type="radio" name="Mary" value="4" id="button4"/>
-	 <input type="radio" name="Lucas" value="5" id="button5"/>
+		<h1 style="margin-top: 200px; padding-bottom:20px;">Applicant Search</h1>
+	<form id="tableForm" action="/getJson" method="get">
+    <select class="selectpicker" data-style="btn-info" name="selectpicker">
+        <optgroup label="Select Applicant"
+            <option name="" value="0">Select Applicant</option>
+            <option name="Placeholdertext" value="1">Please Select</option>
+            <option name="applicant1" value="2">Bill</option>
+            <option name="applicant2" value="3">Hannah</option>
+            <option name="applicant3" value="4">Steve</option>
+            <option name="applicant4" value="5">Grace</option>
+            <option name="applicant5" value="6">Gill</option>
+            <option name="applicant6" value="7">James</option>
+        </optgroup>
+    </select>
+    
+    <input type="button" value="Applicant Information" id="button" />
+    
+    <center><p id="Bill">This is the applicant information for Bill</p></center>
+    
+    </form>
+
 
 <script type="text/javascript">
 
+document.getElementById(Bill).style.display = "none";
 
-var button1 = document.getElementById("button1");
-var button2 = document.getElementById("button2");
-var button3 = document.getElementById("button3");
-var button4 = document.getElementById("button4");
-var button5 = document.getElementById("button5");
+function() {	
+	
+var 2 = document.getElementById(Bill)
 
-if (button1.checked){
-    alert("radio1 selected");
-}else if (button2.checked) {
-    alert("radio2 selected");
+if (2) {
+	document.getElementById(Bill).style.display = "block";
+	
 }
- else if (button3.checked) {
-    alert("radio3 selected");
-}
-else if (button4.checked) {
-    alert("radio4 selected");
-}
-<else if (button5.checked) {
-    alert("radio5 selected");
-}
+
+}	
+	
 </script>
 
 
@@ -53,9 +61,3 @@ else if (button4.checked) {
 
 	</body>
 </html>
-
-
-
-
-
-
