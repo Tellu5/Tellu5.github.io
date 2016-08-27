@@ -10,27 +10,33 @@
 	<center>
  	 <input type="radio" name="Bill" value="1" id="button1"/>
 	 <input type="radio" name="Steve" value="2" id="button2"/>
-	 <input type="radio" name="Hannah" value="2" id="button3"/>
-	 <input type="radio" name="Mary" value="2" id="button4"/>
-	 <input type="radio" name="Lucas" value="2" id="button5"/>
-
-
-
-
+	 <input type="radio" name="Hannah" value="3" id="button3"/>
+	 <input type="radio" name="Mary" value="4" id="button4"/>
+	 <input type="radio" name="Lucas" value="5" id="button5"/>
 
 <script type="text/javascript">
 
 
 var button1 = document.getElementById("button1");
 var button2 = document.getElementById("button2");
+var button3 = document.getElementById("button3");
+var button4 = document.getElementById("button4");
+var button5 = document.getElementById("button5");
 
 if (button1.checked){
     alert("radio1 selected");
 }else if (button2.checked) {
     alert("radio2 selected");
 }
- 	
-	
+ else if (button3.checked) {
+    alert("radio3 selected");
+}
+else if (button4.checked) {
+    alert("radio4 selected");
+}
+<else if (button5.checked) {
+    alert("radio5 selected");
+}
 </script>
 
 
