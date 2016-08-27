@@ -8,34 +8,29 @@
 	<body>
 	
 	<center>
-		<h1 style="margin-top: 200px; padding-bottom:20px;">Applicant Search</h1>
-	<form id="tableForm" action="/getJson" method="get">
-    <select class="selectpicker" data-style="btn-info" name="selectpicker">
-        <optgroup label="Select Applicant"
-            <option name="" value="0">Select Applicant</option>
-            <option name="Placeholdertext" value="1">Please Select</option>
-            <option name="applicant1" value="2">Bill</option>
-            <option name="applicant2" value="3">Hannah</option>
-            <option name="applicant3" value="4">Steve</option>
-            <option name="applicant4" value="5">Grace</option>
-            <option name="applicant5" value="6">Gill</option>
-            <option name="applicant6" value="7">James</option>
-        </optgroup>
-    </select>
-    <input type="button" value="Applicant Information" id="button" />
-    
-    
-    </form>
+ 	  <form style="margin-top:100px;">
+ 	    <input style="height:30px; width:400px; padding-left="10px" placeholder="Please select an applicant..." type="text" name="text" id="text" />
+ 	    <ul>
+ 	    	<li>Bill</li>
+-	    	<li>Bill</li>	
+		<li>Bill</li>
+	</ul>
+
+<input style="height:35px;" type="button" value="search applicant" id="button" />
 
 
-<center>
-    <p id="Bill">This is the applicant information for Bill</p>
-    <p id="Hannah">This is the applicant information for Hannah</p>
-    <p id="Steve">This is the applicant information for Steve</p>
-    <p id="Grace">This is the applicant information for Grace</p>
-    <p id="Gill">This is the applicant information for Gill</p>
-    <p id="James">This is the applicant information for James</p>
-</center>
+ 	    <center><p id="Bill">This is the applicant information for Bill</p></center>
+    <center><p id="Hannah">This is the applicant information for Hannah</p></center>
+    <center><p id="Steve">This is the applicant information for Steve</p></center>
+   <center> <p id="Grace">This is the applicant information for Grace</p></center>
+   <center> <p id="Gill">This is the applicant information for Gill</p></center>
+   <center> <p id="James">This is the applicant information for James</p></center>
+   
+ 	  </form>
+ 	  
+ 	</center>
+ 	
+ 
 
 
 
@@ -44,23 +39,11 @@
 
 document.getelementbyid("Bill").style.display = "none";
 
+function() {
 
-var button = document.getElementById('button');
-
-button.onclick = function(Bill) {
+var 	
 	
-    var id = document.getElementById('Bill');
-    if (id.style.display !== 'none') {
-        id.style.display = 'none';
-    }
-    else {
-        id.style.display = 'block';
-    }
-     
-};
-	
-	
-	
+}	
 	
 </script>
 
@@ -78,3 +61,9 @@ button.onclick = function(Bill) {
 
 	</body>
 </html>
+
+
+
+
+
+
