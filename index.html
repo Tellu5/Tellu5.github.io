@@ -22,16 +22,21 @@
         </optgroup>
     </select>
     <input type="button" value="Applicant Information" id="button" />
-    <center><p id="applicantinformation1">this is the applicant information for Bill</p></center>
-    <center><p id="applicantinformation2">this is the applicant information for Hannah</p></center>
-    <center><p id="applicantinformation3">this is the applicant information for Steve</p></center>
-    <center><p id="applicantinformation4">this is the applicant information for Grace</p></center>
-    <center><p id="applicantinformation5">this is the applicant information for Gill</p></center>
-    <center><p id="applicantinformation6">this is the applicant information for James</p></center>
+    
+    <div class="hideinformation">
+    <center><p id="applicantinformation1">This is the applicant information for Bill</p></center>
+    <center><p id="applicantinformation2">This is the applicant information for Hannah</p></center>
+    <center><p id="applicantinformation3">This is the applicant information for Steve</p></center>
+    <center><p id="applicantinformation4">This is the applicant information for Grace</p></center>
+    <center><p id="applicantinformation5">This is the applicant information for Gill</p></center>
+    <center><p id="applicantinformation6">This is the applicant information for James</p></center>
+    </div>
+    
 </form>
 
 <script type="text/javascript">
 	
+	document.getelementbyclass("hideinformation").style.display = "none";
 	document.getelementbyid("applicantinformation1").style.display = "none";
 	document.getelementbyid("applicantinformation2").style.display = "none";
 	document.getelementbyid("applicantinformation3").style.display = "none";
