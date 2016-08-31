@@ -4,37 +4,16 @@
 
 <p>Click the button next to each applicant to reveal their information.</p>
 
-<form id="frm1" action="form_action.asp">
-  <p>Applicant One</p>
-  First name: <input type="text" name="fname" value="Donald"><br>
-  Last name: <input type="text" name="lname" value="Duck">
-</form> 
 
-<button onclick="myFunction1()">Applicant Information</button>
+<button onclick="myFunction1()">Mathew Jones</button>
 
-<form id="frm2" action="form_action.asp">
-  <p>Mary</p>
-</form>
+<button onclick="myFunction2()">Katie Holmesw</button>
 
-<button onclick="myFunction2()">Applicant Information</button>
+<button onclick="myFunction3()">Charlotte Wright</button>
 
-<form id="frm3" action="form_action.asp">
-  <p>Karl</p>
-</form>
+<button onclick="myFunction4()">James Wilks</button>
 
-<button onclick="myFunction3()">Applicant Information</button>
-
-<form id="frm4" action="form_action.asp">
-  <p>Susan</p>
-</form>
-
-<button onclick="myFunction4()">Applicant Information</button>
-
-<form id="frm5" action="form_action.asp">
-  <p>Jake</p>
-</form>
-
-<button onclick="myFunction5()">Applicant Information</button>
+<button onclick="myFunction5()">Sophie Broom</button>
 
 <p id="demo"></p>
 
@@ -56,7 +35,7 @@ function myFunction2() {
     for (i = 0; i < x.length ;i++) {
         text += x.elements[i].value + "<br>";
     }
-    document.getElementById("demo").innerHTML = text;
+    document.getElementById("demo").innerHTML = "name, date of birth, work experience and waffles";
 }
 
 function myFunction3() {
@@ -66,7 +45,7 @@ function myFunction3() {
     for (i = 0; i < x.length ;i++) {
         text += x.elements[i].value + "<br>";
     }
-    document.getElementById("demo").innerHTML = text;
+    document.getElementById("demo").innerHTML = "name, date of birth, work experience and bears";
 }
 
 function myFunction4() {
@@ -76,7 +55,7 @@ function myFunction4() {
     for (i = 0; i < x.length ;i++) {
         text += x.elements[i].value + "<br>";
     }
-    document.getElementById("demo").innerHTML = text;
+    document.getElementById("demo").innerHTML = "name, date of birth, work experience and sheep";
 }
 
 function myFunction5() {
@@ -86,7 +65,7 @@ function myFunction5() {
     for (i = 0; i < x.length ;i++) {
         text += x.elements[i].value + "<br>";
     }
-    document.getElementById("demo").innerHTML = text;
+    document.getElementById("demo").innerHTML = "name, date of birth, work experience and mice";
 }
 
 
