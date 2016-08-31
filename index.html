@@ -2,19 +2,42 @@
 <html>
 <body>
 
+<p>Click the button next to each applicant to reveal their information.</p>
+
 <form id="frm1" action="form_action.asp">
-  First name: <input type="text" name="fname" value="Donald"><br>
-  Last name: <input type="text" name="lname" value="Duck"><br><br>
+  <p>Donald</p>
 </form> 
 
-<p>Click "Try it" to display the value of each element in the form.</p>
+<button onclick="myFunction(1)">Applicant Information</button>
 
-<button onclick="myFunction()">Try it</button>
+<form id="frm2" action="form_action.asp">
+  <p>Mary</p>
+</form>
+
+<button onclick="myFunction(2)">Applicant Information</button>
+
+<form id="frm3" action="form_action.asp">
+  <p>Karl</p>
+</form>
+
+<button onclick="myFunction(3)">Applicant Information</button>
+
+<form id="frm4" action="form_action.asp">
+  <p>Susan</p>
+</form>
+
+<button onclick="myFunction(4)">Applicant Information</button>
+
+<form id="frm5" action="form_action.asp">
+  <p>Jake</p>
+</form>
+
+<button onclick="myFunction(5)">Applicant Information</button>
 
 <p id="demo"></p>
 
 <script>
-function myFunction() {
+function myFunction(1) {
     var x = document.forms["frm1"];
     var text = "";
     var i;
@@ -23,6 +46,48 @@ function myFunction() {
     }
     document.getElementById("demo").innerHTML = text;
 }
+
+function myFunction(2) {
+    var x = document.forms["frm2"];
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+
+function myFunction(3) {
+    var x = document.forms["frm3"];
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+
+function myFunction(4) {
+    var x = document.forms["frm4"];
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+
+function myFunction(5) {
+    var x = document.forms["frm5"];
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+
+
 </script>
 
 </body>
